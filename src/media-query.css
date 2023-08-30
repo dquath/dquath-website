@@ -131,6 +131,31 @@
     margin-bottom: 32px;
   }
 
+  /* === Pricing section === */
+  #pricing-section {
+    background-image: url("./assets/pricing-img-mobile.svg");
+  }
+
+  .pricing-cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 0;
+    row-gap: 2.5rem;
+    margin-block: 4rem;
+  }
+
+  .pricing-cards .card-header .title {
+    font-size: 20px;
+  }
+
+  .pricing-cards .card-header .price {
+    font-size: 22px;
+  }
+
+  .pricing-cards .card-body .feature-list > li {
+    font-size: 0.9375rem;
+  }
+
   /* === Contact section === */
   .contact-content {
     padding: 3rem 0;

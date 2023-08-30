@@ -1,0 +1,91 @@
+@import "../../variables.css";
+
+.pricing-cards {
+  --card-grey: #808080;
+  --light-font: #505050;
+}
+
+.pricing-cards .card {
+  display: grid;
+  grid-template-rows: 1fr repeat(2, auto);
+  padding-block: 1.5rem;
+  border-radius: var(--border-rad);
+  border: 1px solid var(--card-grey);
+  background-color: var(--custom-white);
+  filter: drop-shadow(0px 4px 4px rgba(128, 128, 128, 0.25));
+}
+
+.pricing-cards .card-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  padding-block-end: 1.5rem;
+  padding-inline: 1.25rem;
+  border-bottom: 1px solid var(--card-grey);
+}
+
+.pricing-cards .card-header > div:nth-child(2) {
+  justify-self: end;
+}
+
+.pricing-cards .card-header .title {
+  margin-bottom: 0.5rem;
+  font-size: 22px;
+  font-weight: var(--font-weight-medium);
+}
+
+.pricing-cards .card-header .subtitle {
+  color: var(--light-font);
+  font-size: 14px;
+}
+
+.pricing-cards .card-header .price {
+  font-size: 24px;
+  font-weight: var(--font-weight-bold);
+}
+
+.pricing-cards .card-body {
+  padding: 1.25rem;
+}
+
+.pricing-cards .card-body > p {
+  margin-bottom: 1rem;
+  font-size: 18px;
+  font-weight: var(--font-weight-medium);
+}
+
+.pricing-cards .card-body .feature-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pricing-cards .card-body .feature-list > li {
+  margin-bottom: 1rem;
+}
+
+.pricing-cards .card-body .feature-list > li::before {
+  content: url("../../assets/tick.svg");
+  padding-right: 0.75rem;
+}
+
+.pricing-cards .card-footer {
+  padding-top: 1.5rem;
+  padding-inline: 1.25rem;
+}
+
+.pricing-cards .card-footer::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: -24px;
+  height: 1px;
+  width: 100%;
+  background-color: #d9d9d9;
+}
+
+.pricing-cards .card-footer .btn {
+  width: 100%;
+  text-align: center;
+  padding-block: 0.75rem;
+}

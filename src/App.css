@@ -50,7 +50,42 @@
 
 /* === Add styles for service section here === */
 
-/* === Add styles for pricing section here === */
+/* === Pricing section === */
+#pricing-section {
+  padding-block: 5rem;
+  background: url("./assets/pricing-img.svg") no-repeat center center;
+  background-size: cover;
+}
+
+.pricing-content > h2 {
+  text-align: center;
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+  margin-block: 4rem;
+}
+
+.pricing-content > .all-pricing {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: gap var(--animation-time);
+}
+
+.pricing-content > .all-pricing:hover {
+  gap: 0.75rem;
+}
+
+.pricing-content > .all-pricing:hover > a {
+  text-decoration: underline;
+}
 
 /* === Contact section === */
 #contact-section {

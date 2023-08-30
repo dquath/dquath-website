@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Button from "./components/Button/Button";
+import PricingCard from "./components/Pricing/PricingCard";
 import "./App.css";
 
 function App() {
@@ -27,6 +28,73 @@ function App() {
                 <a href="tel:0123456789">
                   <i className="fa-solid fa-phone"></i>Contact us
                 </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Pricing section */}
+        <section id="pricing-section">
+          <div className="container">
+            <div className="pricing-content">
+              <h2>Pricing</h2>
+              <div className="pricing-cards">
+                <PricingCard
+                  content={[
+                    {
+                      title: "Digital marketing",
+                      subtitle: "Take your advertising to the next level",
+                      price: "₹900",
+                    },
+                    {
+                      features: [
+                        "Lorem ipsum - sit dolor amet",
+                        "Lorem - sit dolor amet",
+                        "Lorem ipsum - sit dolor amet 24hrs",
+                        "Lorem ipsum - sit dolor",
+                      ],
+                    },
+                  ]}
+                />
+                <PricingCard
+                  content={[
+                    {
+                      title: "Website",
+                      subtitle: "Mark your presence out there",
+                      price: "₹1999",
+                    },
+                    {
+                      features: [
+                        "Lorem ipsum - sit dolor amet",
+                        "Lorem - sit dolor amet",
+                        "Lorem ipsum - sit dolor amet 24hrs",
+                        "Lorem ipsum - sit dolor",
+                      ],
+                    },
+                  ]}
+                />
+                <PricingCard
+                  content={[
+                    {
+                      title: "Website design",
+                      subtitle: "Your idea, our creativity",
+                      price: "₹2500",
+                    },
+                    {
+                      features: [
+                        "Lorem ipsum - sit dolor amet",
+                        "Lorem - sit dolor amet",
+                        "Lorem ipsum - sit dolor amet 24hrs",
+                        "Lorem ipsum - sit dolor",
+                      ],
+                    },
+                  ]}
+                />
+              </div>
+
+              <div className="all-pricing">
+                <a href="#">View all plans</a>
+                <i className="fa-solid fa-arrow-right-long"></i>
               </div>
             </div>
           </div>
