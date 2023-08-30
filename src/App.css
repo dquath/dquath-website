@@ -3,8 +3,8 @@
 /* === Hero section === */
 #hero-section {
   height: 100vh;
-  background: url("./assets/hero-img.png") no-repeat bottom right;
-  background-size: contain;
+  background: url("./assets/hero-img.svg") no-repeat bottom -8rem right;
+  background-size: 50%;
 }
 
 .hero-content {
@@ -19,7 +19,6 @@
   margin-bottom: 96px;
   padding-right: 22px;
   border-radius: var(--border-rad);
-  background-color: var(--custom-white);
 }
 
 .hero-content .hero-text .hero-heading {
