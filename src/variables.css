@@ -1,0 +1,20 @@
+:root {
+  /* Colours */
+  --accent-clr: #0c8ce9;
+  --custom-black: #111;
+  --custom-white: #f5f5f5;
+  --light-grey: #aaa;
+  --dark-grey: #404040;
+
+  /* Font properties */
+  --default-font: "Poppins", sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Default border radius */
+  --border-rad: 8px;
+
+  /* Default Animation time */
+  --animation-time: 0.25s;
+}

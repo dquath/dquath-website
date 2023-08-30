@@ -1,0 +1,66 @@
+@import "../../variables.css";
+
+.ham-menu {
+  display: none;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--custom-white);
+}
+
+header.distinguish-header {
+  box-shadow: rgba(0, 12, 43, 0.05) 0px 4px 8px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.header-content .logo-header a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.header-content nav ul > li:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header-content nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-content nav a::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: 3px;
+  transform: scale(0);
+  transition: var(--animation-time) transform,
+    var(--animation-time) background-color;
+}
+
+.header-content nav a:hover::after {
+  background-color: var(--light-grey);
+  transform: scale(1);
+}
+
+.header-content nav a.page-active::after {
+  background-color: var(--custom-black);
+  transform: scale(1);
+}

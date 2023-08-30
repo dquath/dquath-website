@@ -1,0 +1,82 @@
+@import "./variables.css";
+
+/* === Hero section === */
+#hero-section {
+  height: 100vh;
+  background: url("./assets/hero-img.png") no-repeat bottom right;
+  background-size: contain;
+}
+
+.hero-content {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-content .hero-text {
+  width: fit-content;
+  margin-bottom: 96px;
+  padding-right: 22px;
+  border-radius: var(--border-rad);
+  background-color: var(--custom-white);
+}
+
+.hero-content .hero-text .hero-heading {
+  margin-bottom: 16px;
+}
+
+.hero-content .hero-text .hero-subheading {
+  color: var(--dark-grey);
+  font-size: 24px;
+  font-weight: var(--font-weight-medium);
+}
+
+.hero-content .hero-cta {
+  display: flex;
+  align-items: center;
+}
+
+.hero-content .hero-cta .btn {
+  margin-right: 58px;
+}
+
+.hero-content .hero-cta > a:nth-child(2) > i[class|="fa"] {
+  margin-right: 8px;
+}
+
+.hero-content .hero-cta > a:nth-child(2):hover {
+  text-decoration: underline;
+}
+
+/* === Add styles for service section here === */
+
+/* === Add styles for pricing section here === */
+
+/* === Contact section === */
+#contact-section {
+  color: #fff;
+  background-color: var(--custom-black);
+}
+
+.contact-content {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+  align-items: center;
+}
+
+.contact-text {
+  text-align: center;
+}
+
+.contact-text > h2 {
+  margin-bottom: 14px;
+}
+
+.contact-buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}

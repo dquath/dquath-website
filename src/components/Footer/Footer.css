@@ -1,0 +1,35 @@
+@import "../../variables.css";
+
+footer {
+  padding: 24px 0;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-text {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.footer-content .social-links > ul {
+  display: flex;
+  align-items: center;
+  column-gap: 28px;
+}
+
+.footer-content .social-links > ul i[class|="fa"] {
+  font-size: 26px;
+}
+
+.footer-content .social-links > ul > li > a {
+  transition: var(--animation-time) transform;
+}
+
+.footer-content .social-links > ul > li > a:hover {
+  transform: translateY(-4px);
+}
