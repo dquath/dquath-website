@@ -55,6 +55,7 @@ function App() {
                       ],
                     },
                   ]}
+                  link="#"
                 />
                 <PricingCard
                   content={[
@@ -72,6 +73,7 @@ function App() {
                       ],
                     },
                   ]}
+                  link="#"
                 />
                 <PricingCard
                   content={[
@@ -89,6 +91,7 @@ function App() {
                       ],
                     },
                   ]}
+                  link="#"
                 />
               </div>
 

@@ -2,7 +2,7 @@ import CardHeader from "./CardHeader";
 import CardBody from "./CardBody";
 import "./PricingCard.css";
 
-export default function PricingCard({ content }) {
+export default function PricingCard({ content, link }) {
   return (
     <div className="card">
       <CardHeader
@@ -14,10 +14,14 @@ export default function PricingCard({ content }) {
       <CardBody featureList={content[1].features} />
 
       <div className="card-footer">
-        <a href="#" className="btn">
+        <a href={link} className="btn">
           See details
         </a>
       </div>
     </div>
   );
 }
+
+PricingCard.defaultProps = {
+  link: "#",
+};
